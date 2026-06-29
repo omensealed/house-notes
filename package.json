@@ -1,6 +1,6 @@
 {
   "name": "house-notes",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Private LAN note exchange app.",
   "type": "commonjs",
