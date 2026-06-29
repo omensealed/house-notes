@@ -1,0 +1,16 @@
+{
+  "name": "house-notes",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Private LAN note exchange app.",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node --check src/domain/notes.js && node --check src/http/server.js && node --check src/storage/sqlite-store.js && node --check tests/notes.test.js && node --check tests/server-smoke.test.js && node --check tests/backup-restore.test.js",
+    "lint": "node --check src/domain/notes.js && node --check src/http/server.js && node --check src/storage/sqlite-store.js && node --check tests/notes.test.js && node --check tests/server-smoke.test.js && node --check tests/backup-restore.test.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=26"
+  },
+  "license": "AGPL-3.0-or-later"
+}
